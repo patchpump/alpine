@@ -86,7 +86,7 @@ int		      smime_validate_extra_test(char *mimetext, unsigned long mimelen, char
 
 int  (*pith_opt_smime_get_passphrase)(void);
 int  (*pith_smime_import_certificate)(char *, char *, char *, size_t);
-int  (*pith_smime_enter_password)(char *, char *, size_t);
+extern int  (*pith_smime_enter_password)(char *, char *, size_t);
 int  (*pith_smime_confirm_save)(char *);
 
 static X509_STORE   *s_cert_store;
